@@ -1,0 +1,76 @@
+import { Category } from "@/services/products/types";
+
+export const CATEGORIES: Category[] = [
+  {
+    id: "cat-electronics",
+    slug: "electronics",
+    name: "Optics & Autonomous Flight",
+    tagline: "PRECISION IMAGING & AEROSPACE SYSTEMS",
+    description: "4K and 8K Ultra HD decoupled gimbal cameras, cinema drones, and anamorphic cinema optics designed for uncompromised creators.",
+    bannerImage: "/assets/category_cinematography.jpg",
+    productCount: 4280,
+    availableAttributes: [
+      { key: "resolution", label: "Resolution", options: ["8K 60FPS", "4K 120FPS", "4K 60FPS", "Full HD"] },
+      { key: "sensor", label: "Sensor Size", options: ["1-inch CMOS", "1/1.3-inch CMOS", "Super 35mm"] },
+      { key: "stabilization", label: "Stabilization", options: ["3-Axis Decoupled Gyro", "HorizonLock", "Electronic EIS"] },
+      { key: "weatherRating", label: "Weather Sealing", options: ["IPX8 Submersion", "IP54 Weather Sealed", "Standard"] },
+    ],
+  },
+  {
+    id: "cat-fashion",
+    slug: "fashion",
+    name: "Haute Apparel & Outerwear",
+    tagline: "TECHNICAL SILHOUETTES & RUNWAY TAILORING",
+    description: "Architectural jackets, weather-sealed trench coats, and artisanal evening dresses crafted from waterproof Japanese wool and Italian silk.",
+    bannerImage: "/assets/elena_portrait.jpg",
+    productCount: 8940,
+    availableAttributes: [
+      { key: "size", label: "Size", options: ["XS", "S", "M", "L", "XL", "Tailored"] },
+      { key: "color", label: "Color Palette", options: ["Obsidian Black", "Graphite Charcoal", "Champagne Gold", "Slate"] },
+      { key: "material", label: "Fabric & Material", options: ["Membrane Wool", "Mulberry Silk", "Carbon Coated Ripstop", "Italian Cashmere"] },
+      { key: "fit", label: "Silhouette", options: ["Architectural Oversized", "Precision Tailored", "Relaxed Draped"] },
+    ],
+  },
+  {
+    id: "cat-watches",
+    slug: "watches",
+    name: "Haute Horology & Chronographs",
+    tagline: "MECHANICAL METROLOGY & SKELETONIZED TOURBILLONS",
+    description: "Masterpiece mechanical timepieces featuring grade 5 titanium cases, perpetual calendars, and 72-hour power reserves.",
+    bannerImage: "/assets/landscape_bg.jpg",
+    productCount: 3120,
+    availableAttributes: [
+      { key: "movement", label: "Calibre & Movement", options: ["Automatic Tourbillon", "Mechanical Chronograph", "Perpetual Calibre"] },
+      { key: "caseMaterial", label: "Case Alloy", options: ["Grade 5 Titanium", "18K Rose Gold", "Forged Carbon", "DLC Steel"] },
+      { key: "waterResistance", label: "Depth Rating", options: ["300 Meters", "100 Meters", "50 Meters"] },
+      { key: "strap", label: "Strap", options: ["Integrated Titanium", "Vulcanized FKM Rubber", "Alligator Leather"] },
+    ],
+  },
+  {
+    id: "cat-jewelry",
+    slug: "jewelry",
+    name: "Haute Joaillerie & Precious Metals",
+    tagline: "ETERNAL STONES & SCULPTURAL METALS",
+    description: "Sculptural solitaires, pavé diamond cuffs, and Colombian emerald talismans hand-set by master jewelers in Antwerp and Milan.",
+    bannerImage: "/assets/lens.jpg",
+    productCount: 4610,
+    availableAttributes: [
+      { key: "metal", label: "Precious Metal", options: ["18K Yellow Gold", "18K White Gold", "950 Platinum", "Blackened Gold"] },
+      { key: "gemstone", label: "Gemstone", options: ["VVS1 Diamond", "Zambian Emerald", "Burmese Sapphire", "Tahitian Pearl"] },
+      { key: "collection", label: "Collection", options: ["Solaris", "Monolith Horizon", "Eclipse Nocturne"] },
+    ],
+  },
+  {
+    id: "cat-lifestyle",
+    slug: "lifestyle",
+    name: "Expedition Living & Acoustic Objects",
+    tagline: "SPATIAL ACOUSTICS & EXPEDITION TRUNKS",
+    description: "Milled aluminum wireless acoustic monuments, aerospace carbon fiber flight trunks, and bespoke home diffuser vessels.",
+    bannerImage: "/assets/hero_drone.jpg",
+    productCount: 4050,
+    availableAttributes: [
+      { key: "material", label: "Construction", options: ["Billet Aluminum", "Aviation Polycarbonate", "American Walnut"] },
+      { key: "connectivity", label: "Acoustic / Tech", options: ["High-Res Lossless 24-Bit", "Analog XLR", "Passive Acoustic"] },
+    ],
+  },
+];
